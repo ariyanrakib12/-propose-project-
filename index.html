@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>তুমি কি আমাকে ভালোবাসো নাবিলা?</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(rgba(255,182,193,0.6), rgba(255,105,180,0.6)), url('https://sdmntprwestus.oaiusercontent.com/files/00000000-6990-6230-b259-5f7653c8431f/raw?se=2025-07-05T20%3A26%3A35Z&sp=r&sv=2024-08-04&sr=b&scid=10a04102-0960-523c-a0af-8fda8d4275d6&skoid=5cab1ff4-c20d-41dc-babb-df0c2cc21dd4&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-05T13%3A10%3A57Z&ske=2025-07-06T13%3A10%3A57Z&sks=b&skv=2024-08-04&sig=8nqpiw4b93QQ1iGJ/XdZ7r38m8aJ4NwPVprNwWHpXBk%3D') no-repeat center center/cover;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 20px;
+      max-width: 500px;
+      padding: 20px;
+      background: rgba(255 255 255 / 0.15);
+      border-radius: 25px;
+      box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+      color: #fff;
+    }
+
+    .btn button {
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ffcc00);
+      padding: 12px 28px;
+      border-radius: 66px;
+      border: 2px solid white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow:
+        0 0 10px #00f6ff,
+        0 0 20px #ff00cc,
+        0 0 30px #00ffcc;
+      transition: all 0.3s ease-in-out;
+      font-weight: 600;
+      letter-spacing: 1px;
+      animation: neon-animate 5s infinite linear;
+    }
+
+    @keyframes neon-animate {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    .btn button:hover {
+      transform: scale(1.1);
+      box-shadow:
+        0 0 15px #fff,
+        0 0 30px #ff00ff,
+        0 0 60px #00ffff;
+    }
+
+    .screen {
+      display: none;
+    }
+    .screen.active {
+      display: flex;
+    }
+
+    .floating-emoji {
+      position: absolute;
+      font-size: 26px;
+      animation: float 6s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(0);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Body Content Skipped for Brevity -->
+</body>
+</html>
